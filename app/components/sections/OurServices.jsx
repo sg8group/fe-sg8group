@@ -1,8 +1,9 @@
 "use client";
 
+import useEmblaCarousel from "embla-carousel-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const SERVICES = [
     { title: "Manpower Supply", img: "/services/service1.png" },
@@ -37,15 +38,18 @@ function ServiceCard ({ item }) {
 }
 
 export default function OurServices() {
-    const carouselRef = useRef(null);
-
+    const [emblaRef] = useEmblaCarousel({
+        align: "center",
+        containScroll: "trimSnaps",
+        dragFree: false,
+    })
     return (
         <section className="bg-white py-16">
-            <div className="min-w-screen mx-auto px-6">
+            <div className="min-w-screen mx-auto">
                 <h2 className="section-title text-3xl text-center text-black mb-12">
                     Our Services
                 </h2>
-                <div className="mx-60 sm:px-6 lg:px-8 border">
+                <div className="max-w-5xl mx-auto px-6">
                     {/* ===== DESKTOP GRID ===== */}
                     <div className="hidden lg:flex flex-col gap-8">
 
@@ -66,33 +70,19 @@ export default function OurServices() {
                     </div>
 
                     {/* ===== MOBILE CAROUSEL ===== */}
-                    <div className="lg:hidden overflow-hidden">
-                        <motion.div
-                            ref={carouselRef}
-                            className="flex gap-4 cursor-grab"
-                            drag="x"
-                            dragElastic={0.15}
-                            dragMomentum={true}
-                            dragConstraints={() => {
-                                if (!carouselRef.current) return { left: 0, right: 0 };
-                                const scrollWidth = carouselRef.current.scrollWidth;
-                                const offsetWidth = carouselRef.current.offsetWidth;
-                                return {
-                                    left: -(scrollWidth - offsetWidth),
-                                    right: 0,
-                                };
-                            }}
-                        >
-                            {SERVICES.map((item) => (
-                                <motion.div
-                                    key={item.title}
-                                    className="min-w-65"
-                                    whileTap={{ scale: 0.95 }}
-                                >
-                                    <ServiceCard item={item} />
-                                </motion.div>
-                            ))}
-                        </motion.div>
+                    <div className="lg:hidden">
+                        <div ref={emblaRef} className="overflow-hidden">
+                            <div className="flex">
+                                {SERVICES.map((item) => (
+                                    <div
+                                        key={item.title}
+                                        className="flex-[0_0_75%] px-2"
+                                    >
+                                        <ServiceCard item={item} />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

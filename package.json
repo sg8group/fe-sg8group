@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroui/navbar": "^2.2.27",
+    "embla-carousel-react": "^8.6.0",
     "motion": "^12.24.7",
     "next": "15.5.9",
     "react": "19.1.0",
