@@ -6,6 +6,7 @@ export const MENU = [
     {
         name: "Company Profile",
         children: [
+            { label: "Overview", path: "/company-profile" },
             { label: "Corporate Value", path: "/company-profile/corporate-value" },
             { label: "Employee Branding", path: "/company-profile/employee-branding" },
             { label: "Logo Philosophy", path: "/company-profile/logo-philosophy" },

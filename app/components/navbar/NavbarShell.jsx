@@ -32,25 +32,34 @@ export default function NavbarShell({
                 {children}
             </div>  
             <div className="hidden lg:flex items-center gap-4">
-                <FaInstagram size={40} className="cursor-pointer hover:text-blue-900 text-black" />
-                <FaLinkedin size={40} className="cursor-pointer hover:text-blue-900 text-black" />
+                <a href="#" aria-label="Instagram" className="text-black/70 hover:text-blue-900">
+                    <FaInstagram size={40} />
+                </a>
+                <a href="#" aria-label="Linkedin" className="text-black/70 hover:text-blue-900">
+                    <FaLinkedin size={40} />
+                </a>
             </div>
 
             <button
-                onClick={() => setMobileOpen(!mobileOpen)}
+                onClick={() => setMobileOpen((prev) => !prev)}
                 className="lg:hidden flex flex-col gap-1"
+                aria-label="Toggle menu"
+                aria-expanded={mobileOpen}
             >
-                {["", "", ""].map((_, i) => (
+                {[0, 1, 2].map((i) => (
                     <span
                         key={i}
-                        className={`h-0.5 w-6 bg-black transition ${
-                        mobileOpen &&
-                        (i === 0
-                            ? "rotate-45 translate-y-1.5"
-                            : i === 1
-                            ? "opacity-0"
-                            : "-rotate-45 -translate-y-1.5")
-                        }`}
+                        className={`h-0.5 w-6 bg-black transition-transform duration-300
+                            ${
+                                mobileOpen &&
+                                (i === 0
+                                    ? "rotate-45 translate-y-1.5"
+                                    : i === 1
+                                    ? "opacity-0"
+                                    : "-rotate-45 -translate-y-1.5"
+                                )
+                            }
+                        `}
                     />
                 ))}
             </button>

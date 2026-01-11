@@ -12,16 +12,29 @@ export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
-        document.body.style.overflow = mobileOpen ? "hidden" : "auto";
+        document.body.style.overflow = mobileOpen ? "hidden" : "";
     }, [mobileOpen]);
 
     useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 10);
-        };
+        const handleScroll = () => setIsScrolled(window.scrollY > 24);
 
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    useEffect(() => {
+        if (!mobileOpen) setActiveMenu(null);
+    }, [mobileOpen]);
+
+    useEffect(() => {
+        const handleKey = (e) => {
+            if (e.key === "Escape") {
+                setMobileOpen(false);
+                setActiveMenu(null);
+            }
+        };
+        document.addEventListener("keydown", handleKey);
+        return () => document.removeEventListener("keydown", handleKey);
     }, []);
 
     return (
@@ -45,7 +58,7 @@ export default function Navbar() {
                 </div>
             </NavbarShell>
             <div className="lg:hidden">
-                <MobileView open={mobileOpen} activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
+                <MobileView open={mobileOpen} setMobileOpen={setMobileOpen} activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
             </div>
         </motion.nav>
     );
