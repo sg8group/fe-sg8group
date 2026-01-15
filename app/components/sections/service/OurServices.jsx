@@ -1,55 +1,23 @@
 "use client";
 
 import useEmblaCarousel from "embla-carousel-react";
-import { motion } from "framer-motion";
-import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
-
-const SERVICES = [
-    { title: "Manpower Supply", img: "/services/service1.png" },
-    { title: "Car Rental", img: "/services/service2.png" },
-    { title: "Facility Service", img: "/services/service3.png" },
-    { title: "Brand Activation", img: "/services/service4.png" },
-    { title: "Cleaning Services", img: "/services/service5.png" },
-    { title: "Export Import Services", img: "/services/service6.png" },
-    { title: "Consulting", img: "/services/service7.png" },
-];
-
-function ServiceCard ({ item }) {
-    return (
-        <div className="w-full overflow-hidden rounded-2xl shadow transition hover:shadow-lg bg-white">
-            <div className="relative w-full aspect-3/4">
-                <Image 
-                    src={item.img}
-                    alt={item.title}
-                    fill
-                    className="object-cover"
-                />
-                <div className="
-                    absolute inset-0
-                    bg-linear-to-t
-                    from-black/95 via-black/20
-                    to-transparent
-                "/>
-                <p className="absolute bottom-4 left-4 section-title text-white text-2xl md:text-base leading-snug">{item.title}</p>
-            </div>
-        </div>
-    )
-}
+import ServiceCard from "./ServiceCard";
+import { SERVICES } from "@/constants/serivce";
+import Container from "@/components/layouts/Container";
 
 export default function OurServices() {
     const [emblaRef] = useEmblaCarousel({
-        align: "center",
+        align: "start",
         containScroll: "trimSnaps",
         dragFree: false,
     })
     return (
         <section className="bg-white py-16">
-            <div className="min-w-screen mx-auto">
-                <h2 className="section-title text-3xl text-center text-black mb-12">
+            <Container>
+                <h2 className="section-title text-2xl sm:text-3xl lg:text-4xl text-center text-black font-semibold mb-12">
                     Our Services
                 </h2>
-                <div className="max-w-5xl mx-auto px-6">
+                <div className="w-full px-4 md:px-6">
                     {/* ===== DESKTOP GRID ===== */}
                     <div className="hidden lg:flex flex-col gap-8">
 
@@ -85,7 +53,7 @@ export default function OurServices() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     );
 }

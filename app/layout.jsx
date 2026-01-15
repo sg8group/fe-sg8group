@@ -1,3 +1,4 @@
+import Navbar from "./components/layouts/navbar/Navbar";
 import "./globals.css";
 import { Montserrat, Poppins } from "next/font/google";
 
@@ -21,11 +22,16 @@ const poppins = Poppins({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en suppressHydrationWarning"
+    <html lang="en"
       suppressHydrationWarning
       className={`${montserrat.variable} ${poppins.variable}`}
     >
-      <body className="antialiased">
+      <body className="antialiased bg-white relative min-h-screen overflow-x-hidden">
+        <div className="pointer-events-none fixed inset-x-0 top-0 z-50">
+          <div className="pointer-events-auto">
+            <Navbar />
+          </div>
+        </div>
         {children}
       </body>
     </html>

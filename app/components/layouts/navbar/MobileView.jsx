@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { MENU } from "@/constants/menu";
 import MobileMenuItem from "./MobileMenuItem";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function MobileView({ open, setMobileOpen, activeMenu, setActiveMenu }) {
     return (
@@ -33,7 +34,16 @@ export default function MobileView({ open, setMobileOpen, activeMenu, setActiveM
                                     setActiveMenu={setActiveMenu}
                                 />
                             ))}
+                            <div className="flex justify-center gap-6 py-4">
+                                <a href="#" aria-label="Instagram" className="text-black/70 hover:text-blue-900">
+                                    <FaInstagram className="h-8 w-8" />
+                                </a>
+                                <a href="#" aria-label="Linkedin" className="text-black/70 hover:text-blue-900">
+                                    <FaLinkedin className="h-8 w-8" />
+                                </a>
+                            </div>
                         </ul>
+                        
                     </motion.div>
                 </>
             )}

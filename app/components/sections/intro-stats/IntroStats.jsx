@@ -1,17 +1,10 @@
-import Counter from "../Counter";
+import Container from "@/components/layouts/Container";
+import Counter from "./Counter";
 
 export default function IntroStats() {
     return (
         <section className="bg-white py-16">
-            <div className="
-                max-w-7xl 
-                mx-auto 
-                px-4 sm:px-6 lg:px-8
-                grid 
-                gap-12 
-                md:grid-cols-2 
-                md:gap-16
-            ">
+            <Container className="md:grid-cols-2 md:gap-16 items-center">
                 {/* LEFT - TEXT */}
                 <div className="text-center md:text-left">
                     <h2 className="section-title text-4xl text-black mb-4">
@@ -41,7 +34,7 @@ export default function IntroStats() {
                         <p className="body-text text-gray-600">Clients</p>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     );
 }

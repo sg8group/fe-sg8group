@@ -16,7 +16,7 @@ export default function Navbar() {
     }, [mobileOpen]);
 
     useEffect(() => {
-        const handleScroll = () => setIsScrolled(window.scrollY > 24);
+        const handleScroll = () => setIsScrolled(window.scrollY > 120);
 
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);

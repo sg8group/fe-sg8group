@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
     return (
-        <section className="relative w-full h-dvh overflow-hidden pt20 md:pt-22">
+        <section className="relative h-dvh w-screen overflow-hidden pt20 md:pt-22">
             <Image
                 src="/heroImage.jpg"
                 alt="SG8 Background"
@@ -12,7 +12,7 @@ export default function Hero() {
             />
             <div className="absolute inset-0 bg-black/70" />
 
-            <div className="relative z-10 flex h-full items-center justify-center px-4 text-center">
+            <div className="relative z-10 flex h-full items-center justify-center px-6 text-center">
                 <h1 className="text-white heading text-4xl lg:text-7xl sm:text-5xl">SG lapan grup</h1>
             </div>
         </section>
