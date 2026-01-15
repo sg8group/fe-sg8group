@@ -5,8 +5,9 @@ export default function JoinCard() {
         bg-[#1e2f57]
         rounded-2xl
         p-10
-        flex flex-col
         gap-6
+        flex flex-col
+        justify-between
         shadow-lg
         ">
             <h3 className="text-white text-2xl sm:text-3xl font-semibold leading-snug">
@@ -15,15 +16,16 @@ export default function JoinCard() {
 
             <button
                 className="
-                w-fit
-                bg-[#f5a623]
-                text-white
-                px-6
-                py-3
-                rounded-lg
-                font-medium
-                hover:bg-[#e6951f]
-                transition
+                    cursor-pointer
+                    w-fit
+                    bg-[#f5a623]
+                    text-white
+                    px-6
+                    py-3
+                    rounded-lg
+                    font-medium
+                    hover:bg-[#e6951f]
+                    transition
                 "
             >
                 Join Us

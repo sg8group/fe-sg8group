@@ -7,24 +7,20 @@ export default function RecruitmentCTA() {
     <section className="bg-white py-16">
         <Container>
             {/* IMAGE + CTA */}
-            <div className="grid md:grid-cols-3 md:grid-rows-[auto_auto] gap-8 md:px-16">
+            <div className="grid md:grid-cols-3 gap-8 md:px-16 items-stretch">
                 {/* IMAGE */}
-                <div className="md:col-span-1">
-                    <div className="relative w-full h-full rounded-2xl overflow-hidden bg-gray-200">
-                        <Image
-                            src="/placeholder.jpg"
-                            alt="SG8 Team"
-                            fill
-                            className="object-cover"
-                        />
-                    </div>
+                <div className="md:col-span-1 relative rounded-2xl overflow-hidden bg-gray-200 min-h-55 md:min-h-0">
+                    <Image
+                        src="/placeholder.jpg"
+                        alt="SG8 Team"
+                        fill
+                        className="object-cover w-full h-full"
+                    />
                 </div>
 
                 {/* JOIN CARD */}
                 <div className="md:col-span-2">
-                    <div className="relative w-full h-full rounded-2xl overflow-hidden bg-gray-200">
-                        <JoinCard />
-                    </div>
+                    <JoinCard />
                 </div>
 
                 {/* DESCRIPTION */}

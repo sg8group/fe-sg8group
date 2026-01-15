@@ -1,3 +1,4 @@
+import Footer from "./components/layouts/Footer";
 import Navbar from "./components/layouts/navbar/Navbar";
 import "./globals.css";
 import { Montserrat, Poppins } from "next/font/google";
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
           </div>
         </div>
         {children}
+        <Footer />
       </body>
     </html>
   );

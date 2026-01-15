@@ -4,6 +4,7 @@ import Hero from "../components/sections/Hero";
 import IntroStats from "../components/sections/intro-stats/IntroStats";
 import OurMindset from "../components/sections/OurMindset";
 import OurServices from "../components/sections/service/OurServices";
+import OurClient from "@/components/sections/OurClient";
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <OurServices />
         <OurMindset />
         <RecruitmentCTA />
+        <OurClient />
       </main>
     </>
   );
