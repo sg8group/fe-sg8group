@@ -41,11 +41,11 @@ export default function Footer() {
                         {/* LEFT COLUMN */}
                         <div>
                             <Image
-                                src="/primLogo_sg8.png"
+                                src="/footerLogo.png"
                                 alt="SG8 Group"
-                                width={150}
+                                width={200}
                                 height={40}
-                                className="mb-5"
+                                className="mb-5 -ms-2.5"
                             />
 
                             <p className="section-title font-medium mb-6 leading-relaxed uppercase">
