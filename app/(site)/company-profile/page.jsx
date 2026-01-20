@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
+import Hero from '@/components/sections/Hero';
 
 function CompanyProfilePage() {
   return (
-    <div>CompanyProfilePage</div>
-  )
+    <>
+      <Hero/>
+    </>
+  );
 }
 
-export default CompanyProfilePage
+export default CompanyProfilePage;
