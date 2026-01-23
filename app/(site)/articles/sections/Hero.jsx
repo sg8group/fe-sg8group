@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
     return (
-        <section className="relative h-dvh w-screen overflow-hidden pt20 md:pt-22">
+        <section className="relative h-90 w-screen overflow-hidden pt20 md:pt-22">
             <Image
                 src="/heroImage.jpg"
                 alt="SG8 Background"

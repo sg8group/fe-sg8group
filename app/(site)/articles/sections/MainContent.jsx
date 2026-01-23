@@ -1,32 +1,34 @@
+
 import React from 'react'
 import ArticleCard from "../components/ArticleCard";
 
-const articles = [
-  {
-    id: 1,
-    title: "Digital Transformation Strategies for 2025",
-    slug: "digital-transformation-2025",
-    image: "/heroImage.jpg", // Pastikan path gambar benar
-    category: "Technology",
-    date: "20 Jan 2024"
-  },
-  {
-    id: 2,
-    title: "Understanding Next.js App Router",
-    slug: "understanding-nextjs",
-    image: "/services/service1.png",
-    category: "Development",
-    date: "18 Jan 2024"
-  },
-  // ... artikel lainnya
-];
 
-function MainContent() {
+
+function MainContent({ articles, pageTitle }) {
+  
+  if (!articles || articles.length === 0) {
+    return (
+      <div className="text-center py-10">
+        <h2 className="text-xl font-semibold text-gray-600">No articles found for {pageTitle}</h2>
+      </div>
+    );
+  }
+
   return (
-    <div className="w-full ">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:gap-2 md:gap-3 lg:gap-6 max-w-7xl mx-auto">
+    <div className="w-full">
+        {/* Judul Kategori (Opsional, agar user tau sedang lihat apa) */}
+        <h2 className="text-2xl font-bold mb-6 capitalize text-gray-800 border-b pb-2">
+            {pageTitle}
+        </h2>
+
+        {/* RESPONSIVE GRID:
+            - grid-cols-1: Mobile (1 kartu per baris)
+            - sm:grid-cols-2: Tablet (2 kartu per baris)
+            - lg:grid-cols-3: Desktop (3 kartu per baris)
+        */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
             {articles.map((item) => (
-            <ArticleCard key={item.id} article={item} />
+                <ArticleCard key={item.id} article={item} />
             ))}
         </div>
     </div>
