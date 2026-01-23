@@ -13,7 +13,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-black/70" />
 
             <div className="relative z-10 flex h-full items-center justify-center px-6 text-center">
-                <h1 className="text-white heading text-4xl lg:text-7xl sm:text-5xl">HIDUP JOKOWI</h1>
+                <h1 className="text-white heading text-4xl lg:text-7xl sm:text-5xl">Business Article</h1>
             </div>
         </section>
     );

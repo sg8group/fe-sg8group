@@ -47,11 +47,11 @@ import React from "react";
     <>
       <Hero />
       <Container>
-      <div className="grid grid-cols-4 gap-8 lg:py-10 ">
+      <div className="grid sm:grid-cols-3 md:grid-cols-4 gap-8 md:py-5 lg:py-10">
         <div className="col-span-1">
           <Sidebar />  
         </div>
-        <div className="col-span-3">
+        <div className="sm:col-span-2 md:col-span-3 ">
           <MainContent articles={articles} pageTitle={pageTitle} />
         </div>
       </div>

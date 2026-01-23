@@ -7,13 +7,14 @@ export default function ArticleCard({ article }) {
       href={`/articles/read/${article.slug}`} 
       className="group block w-full h-full"
     >
-      <div className="w-full h-full overflow-hidden rounded-2xl shadow transition-all duration-300 hover:shadow-xl hover:-translate-y-1 bg-white relative">
+      <div className=":w-full h-full overflow-hidden rounded-2xl shadow transition-all duration-300 hover:shadow-xl hover:-translate-y-1 bg-white relative">
         
         {/* Image Container 
            Saya ubah aspect rationya sedikit menjadi aspect-[4/3] agar lebih 
            cocok untuk thumbnail artikel, tapi tetap mempertahankan gaya full image.
         */}
-        <div className="relative w-full aspect-[4/3] overflow-hidden">
+        <div className="relative w-full aspect-4/3 overflow-hidden">
+        
           <Image 
             src={article.image}
             alt={article.title}

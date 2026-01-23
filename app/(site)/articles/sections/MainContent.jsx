@@ -23,8 +23,8 @@ const articles = [
 
 function MainContent() {
   return (
-    <div className="w-full">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+    <div className="w-full ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:gap-2 md:gap-3 lg:gap-6 max-w-7xl mx-auto">
             {articles.map((item) => (
             <ArticleCard key={item.id} article={item} />
             ))}
