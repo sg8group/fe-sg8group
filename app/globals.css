@@ -41,3 +41,20 @@
     font-family: var(--font-poppins), sans-serif;
   }
 }
+
+@keyframes carousel {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-carousel {
+  animation: carousel 25s linear infinite;
+}
+
+.animate-carousel-reverse {
+  animation-direction: reverse;
+}
