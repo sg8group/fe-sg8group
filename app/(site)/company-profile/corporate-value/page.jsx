@@ -1,13 +1,14 @@
 import OurClient from "@/components/sections/OurClient";
 import OurMindset from "@/components/sections/OurMindset";
 import OurServices from "@/components/sections/service/OurServices";
+import Corporatehero from "./Corporatehero";
 
 const { default: Hero } = require("@/components/sections/Hero");
 
 export default function CorporateValuePage() {
   return (
     <>
-      <Hero/>
+      <Corporatehero />
        <section className="py-24 bg-white">
         <div className="container mx-auto px-4 md:px-12 lg:px-24">
           <div className="max-w-5xl mx-auto text-center space-y-10">

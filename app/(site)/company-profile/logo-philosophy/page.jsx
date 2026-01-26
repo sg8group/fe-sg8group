@@ -1,12 +1,12 @@
 import React from 'react';
-import Hero from '@/components/sections/Hero';
 import OurClient from '@/components/sections/OurClient';
 import Image from 'next/image';
+import Philosophyhero from './Philosophyhero';
 
 export default function LogoPhilosophyPage() {
   return (
     <>
-      <Hero />
+      <Philosophyhero />
       
       <section className="py-20 bg-white overflow-hidden">
         <div className="container mx-auto px-4 md:px-12 lg:px-24">
