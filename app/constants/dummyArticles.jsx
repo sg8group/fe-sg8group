@@ -12,6 +12,16 @@ export const dummyArticles = [
       content: "<p>In an era of rapid technological advancement, digital transformation is crucial for business survival...</p>"
     },
     {
+      id: 10,
+      title: "Digital Transformation Strategies for 2025",
+      slug: "digital-transformation-strategies-2025",
+      // Menggunakan heroImage.jpg yang ada di public
+      image: "public/heroImage.jpg", 
+      topic: { name: "Technology" },
+      created_at: "2025-01-20T09:00:00Z",
+      content: "<p>In an era of rapid technological advancement, digital transformation is crucial for business survival...</p>"
+    },
+    {
       id: 2,
       title: "The Importance of Hygiene in Modern Workspaces",
       slug: "importance-of-hygiene-modern-workspaces",
@@ -72,6 +82,16 @@ export const dummyArticles = [
       content: "<p>Southeast Asia is becoming a global hub for investment due to its growing digital economy...</p>"
     },
     {
+      id: 11,
+      title: "Capital Investment Trends in Southeast Asia",
+      slug: "capital-investment-trends-sea",
+      // Menggunakan service6.png
+      image: "/footerLogo.png",
+      topic: { name: "Capital" },
+      created_at: "2024-12-25T09:30:00Z",
+      content: "<p>Southeast Asia is becoming a global hub for investment due to its growing digital economy...</p>"
+    },
+    {
       id: 8,
       title: "Psychological Safety in the Workplace",
       slug: "psychological-safety-workplace",
@@ -85,6 +105,7 @@ export const dummyArticles = [
       id: 9,
       title: "Sustainable Business Practices for the Future",
       slug: "sustainable-business-practices",
+      author : "Jane Doe",
       // Menggunakan footerImg.png sebagai variasi
       image: "/footerImg.png",
       topic: { name: "Business" },

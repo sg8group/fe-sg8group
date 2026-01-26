@@ -55,7 +55,7 @@ function Sidebar({ activeCategory }) {
                         value={currentSlug} 
                         className="w-full appearance-none bg-gray-50 border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-blue-500 transition-colors cursor-pointer font-medium"
                     >
-                        <option value="">Select Topic...</option>
+                        
                         {topics.map((topic, index) => (
                             <option key={index} value={topic.slug}>
                                 {topic.name}
