@@ -1,7 +1,6 @@
-// app/(site)/articles/read/[slug]/page.jsx
+
 import Image from "next/image";
 import { notFound } from "next/navigation";
-// Pastikan path import ini sesuai dengan struktur folder kamu
 import { dummyArticles } from "../../../../constants/dummyArticles";
 import Container from "@/components/layouts/Container";
 import SideContent from "../../sections/SideContent";
@@ -45,7 +44,7 @@ export default async function ArticleDetailPage({ params }) {
       <article className="pb-12 pt-35">
         <div className="mb-8 text-center">
           {article.topic && (
-            <span className="border border-gray-300 text-blue-700 bg-blue-200 px-3 py-1 rounded-full text-md font-medium">
+            <span className="border border-blue-700 text-blue-700 px-3 py-1 rounded-full text-md font-medium">
               {article.topic.name}
             </span>
           )}
@@ -54,7 +53,7 @@ export default async function ArticleDetailPage({ params }) {
             {article.title}
           </h1>
 
-          <p className="text-gray-500 mt-2 text-sm md:text-base gap-2 flex justify-center items-center  flex-col md:flex-row md:gap-4">
+          <p className="text-gray-500 mt-2 text-sm md:text-base gap-x-0 flex justify-center items-center  flex-col md:flex-row md:gap-4">
             Published on{" "}
             {new Date(article.created_at).toLocaleDateString("id-ID", {
               day: "numeric",
@@ -81,9 +80,7 @@ export default async function ArticleDetailPage({ params }) {
           <div
             className="col-span-3 prose prose-lg w-full text-gray-800 leading-relaxed"
             // article.content diambil dari dummyArticles
-            dangerouslySetInnerHTML={{
-              __html: article.body || article.content,
-            }}
+            dangerouslySetInnerHTML={{ __html: article.body || article.content }}
           />
           <div className="col-span-1">
             <SideContent />

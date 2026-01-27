@@ -58,6 +58,7 @@ export default function ArticleCard({ article }) {
             
             <span className="text-xs text-gray-300 font-medium mt-2">
                 {formattedDate}
+                {article.author ? ` • by ${article.author}` : ""}
             </span>
           </div>
         </div>

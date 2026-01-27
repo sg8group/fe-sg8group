@@ -5,6 +5,7 @@ export const dummyArticles = [
       id: 1,
       title: "Digital Transformation Strategies for 2025",
       slug: "digital-transformation-strategies-2025",
+      author : "John Smith",
       // Menggunakan heroImage.jpg yang ada di public
       image: "public/heroImage.jpg", 
       topic: { name: "Technology" },
@@ -15,6 +16,7 @@ export const dummyArticles = [
       id: 10,
       title: "Digital Transformation Strategies for 2025",
       slug: "digital-transformation-strategies-2025",
+      author : "John Smith",
       // Menggunakan heroImage.jpg yang ada di public
       image: "public/heroImage.jpg", 
       topic: { name: "Technology" },
@@ -25,6 +27,7 @@ export const dummyArticles = [
       id: 2,
       title: "The Importance of Hygiene in Modern Workspaces",
       slug: "importance-of-hygiene-modern-workspaces",
+      author : "Emily Davis",
       // Menggunakan service1.png
       image: "public/services/service1.png",
       topic: { name: "Cleaning & Hygiene" },
@@ -35,6 +38,7 @@ export const dummyArticles = [
       id: 3,
       title: "Maximizing ROI in Hospitality Management",
       slug: "maximizing-roi-hospitality",
+      author : "Michael Lee",
       // Menggunakan service2.png
       image: "/services/service2.png",
       topic: { name: "Hospitality" },
@@ -45,6 +49,7 @@ export const dummyArticles = [
       id: 4,
       title: "Legal Aspects of Corporate Outsourcing",
       slug: "legal-aspects-corporate-outsourcing",
+      author : "Sarah Johnson",
       // Menggunakan service3.png
       image: "/services/service3.png",
       topic: { name: "Legal" },
@@ -55,6 +60,7 @@ export const dummyArticles = [
       id: 5,
       title: "Effective Sales Techniques for B2B Markets",
       slug: "effective-sales-techniques-b2b",
+      author : "David Wilson",
       // Menggunakan service4.png
       image: "/services/service4.png",
       topic: { name: "Sales Marketing" },
@@ -65,6 +71,7 @@ export const dummyArticles = [
       id: 6,
       title: "Organizational Development: Building Strong Teams",
       slug: "organizational-development-building-teams",
+      author : "Laura Martinez",
       // Menggunakan service5.png
       image: "/services/service5.png",
       topic: { name: "Organization Development" },
@@ -75,6 +82,7 @@ export const dummyArticles = [
       id: 7,
       title: "Capital Investment Trends in Southeast Asia",
       slug: "capital-investment-trends-sea",
+      author : "Mark Thompson",
       // Menggunakan service6.png
       image: "/services/service6.png",
       topic: { name: "Capital" },
@@ -85,6 +93,7 @@ export const dummyArticles = [
       id: 11,
       title: "Capital Investment Trends in Southeast Asia",
       slug: "capital-investment-trends-sea",
+      author : "Mark Thompson",
       // Menggunakan service6.png
       image: "/footerLogo.png",
       topic: { name: "Capital" },
@@ -95,11 +104,12 @@ export const dummyArticles = [
       id: 8,
       title: "Psychological Safety in the Workplace",
       slug: "psychological-safety-workplace",
+      author : "Anna Brown",
       // Menggunakan service7.png
       image: "/services/service7.png",
       topic: { name: "Psychology" },
       created_at: "2024-12-20T13:10:00Z",
-      content: "<p>Employees need to feel safe to express ideas and take risks without fear of retribution...</p>"
+      content: '<h3>asdasdasdadasdasdasdasd<strong>asdasdasd</strong><i><strong>asdasdasdasdasdasd</strong></i></h3><h2><i><strong>asdasdasdasd</strong></i></h2><h2>asdlkjnlnasdljjn</h2><p>askjdjaksdasd<strong>sdasdasd</strong><i><strong>asdasdasdasdasd </strong></i><a href="https://www.youtube.com/"><i><strong>https://www.youtube.com/</strong></i></a></p><ul><li>asdasdasasdasdasd</li></ul><p>asdasdqq</p><p>&nbsp;</p><ol><li>ASDASDAKSJDBA</li><li>ASDLKANSLKDNALSD</li></ol><p>&nbsp;</p><ul><li>asdkjasdnkjasdnasd</li><li>asdasdasdas</li><li>asdasdljnkjasdn</li></ul>'
     },
     {
       id: 9,
