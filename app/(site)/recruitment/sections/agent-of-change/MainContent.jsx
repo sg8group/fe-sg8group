@@ -6,7 +6,7 @@ function MainContent() {
     <div className="w-full flex-row justify-center items-center py-25 bg-[#1c2b4f]">
       <Container>
         {/* Konten pertama */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 w-full justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 w-full justify-center">
           <div className="order-1 lg:order-2 lg:col-span-1 relative w-full max-w-sm justify-center items-center">
             <img
               src="/recruitment/agent-of-change/image01.png"
@@ -113,27 +113,57 @@ function MainContent() {
         </div>
 
         {/* Poin agen perubahan */}
-        <div className="grid grid-cols-2 w-full justify-center items-center text-center bg-white rounded-xl text-black py-10 px-6 gap-4">
-
-            {/* poin 1 dan 2 */}
-            <div className="grid grid-cols-2 w-full">
-                <div className="w-15 h-15 rounded-full bg-white border-3 border-[#1c2b4f] text-[#1c2b4f] text-3xl flex items-center justify-center font-bold">
-                  1
-                </div>
-                <div className="w-15 h-15 rounded-full bg-white border-3 border-[#1c2b4f] text-[#1c2b4f] text-3xl flex items-center justify-center font-bold">
-                  2
-                </div>
+        <div className="w-full bg-white rounded-xl py-10 px-6 text-black">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Item 1 */}
+            <div className="flex flex-col items-center text-center gap-4">
+              <div
+                className="w-14 h-14 rounded-full border-3 border-black
+                      flex items-center justify-center text-2xl font-bold"
+              >
+                1
+              </div>
+              <p className="text-regular">
+                Dari yang berjalan di tempat menjadi terbang jauh
+              </p>
             </div>
 
-            {/* poin 3 dan 4 */}
-            <div className="grid grid-cols-2 w-full">
-                <div className="w-15 h-15 rounded-full bg-white border-3 border-[#1c2b4f] text-[#1c2b4f] text-3xl flex items-center justify-center font-bold">
-                  3
-                </div>
-                <div className="w-15 h-15 rounded-full bg-white border-3 border-[#1c2b4f] text-[#1c2b4f] text-3xl flex items-center justify-center font-bold">
-                  4
-                </div>
+            {/* Item 2 */}
+            <div className="flex flex-col items-center text-center gap-4">
+              <div
+                className="w-14 h-14 rounded-full border-3 border-black
+                      flex items-center justify-center text-2xl font-bold"
+              >
+                2
+              </div>
+              <p className="text-regular">Dari yang menjijikkan ke yang dipuja</p>
             </div>
+
+            {/* Item 3 */}
+            <div className="flex flex-col items-center text-center gap-4">
+              <div
+                className="w-14 h-14 rounded-full border-3 border-black
+                      flex items-center justify-center text-2xl font-bold"
+              >
+                3
+              </div>
+              <p className="text-regular">Dari tak berguna menjadi berguna</p>
+            </div>
+
+            {/* Item 4 */}
+            <div className="flex flex-col items-center text-center gap-4">
+              <div
+                className="w-14 h-14 rounded-full border-3 border-black
+                      flex items-center justify-center text-2xl font-bold"
+              >
+                4
+              </div>
+              <p className="text-regular">
+                Dari penghambat menjadi penghias/agen perubahan (Agent of
+                Change)
+              </p>
+            </div>
+          </div>
         </div>
       </Container>
     </div>
