@@ -76,9 +76,9 @@ export default async function ArticleDetailPage({ params }) {
           </div>
         )}
 
-        <div className="grid-cols-4 gap-5 md:grid">
+        <div className="grid-cols-4 gap-10 md:grid">
           <div
-            className="col-span-3 prose prose-lg w-full text-gray-800 leading-relaxed"
+            className="col-span-3 prose prose-lg max-w-full text-gray-800 leading-relaxed text-justify mb-10 "
             // article.content diambil dari dummyArticles
             dangerouslySetInnerHTML={{ __html: article.body || article.content }}
           />
