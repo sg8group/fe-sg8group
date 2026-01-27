@@ -3,7 +3,7 @@ import { FaFacebookSquare, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 function SideContent() {
   return (
-    <div className="px-5 py-5 border border-gray-300 text-black rounded-xl" leading-relaxed>
+    <div className="px-5 py-5 border border-gray-300 text-black rounded-xl leading-relaxed">
       <img src="/primLogo_sg8.png" alt="logo SG8 Group" />
       <h1 className=" text-lg mb-3 font-bold">About SG8 Group</h1>
       <p className=" text-gray-700 text-sm text-justify indent-4">
