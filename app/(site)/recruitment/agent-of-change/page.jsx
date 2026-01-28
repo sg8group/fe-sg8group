@@ -1,5 +1,5 @@
 import React from 'react'
-import RecruitHero from '../sections/agent-of-change/AgentHero'
+import AgentHero from '../sections/agent-of-change/AgentHero'
 import ContentText from '../sections/agent-of-change/ContentText'
 import MainContent from '../sections/agent-of-change/MainContent'
 import NextContent from '../sections/agent-of-change/NextContent'
@@ -8,7 +8,7 @@ import LastContent from '../sections/agent-of-change/LastContent'
 function AgentOfChange() {
   return (
     <>
-      <RecruitHero />
+      <AgentHero />
       <ContentText />
       <MainContent />
       <NextContent />

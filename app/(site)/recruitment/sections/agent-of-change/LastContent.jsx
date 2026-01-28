@@ -67,7 +67,7 @@ function LastContent() {
             yang baik.
           </p>
 
-          <p className="leading-relaxed text-xl text-slate-200">
+          <p className="leading-relaxed  text-slate-200">
             Terdapat banyak cara untuk mengubah, termasuk kunci keberhasilan
             dari perubahan itu sendiri. Tinggal bagaimana setiap individu
             menilai dan menyikapi perubahan tersebut. Mari bersama menjadi
