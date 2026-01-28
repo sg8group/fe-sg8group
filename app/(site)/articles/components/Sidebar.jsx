@@ -92,12 +92,7 @@ function Sidebar({ activeCategory }) {
                         </Link>
                     )
                 })}
-                 <Link 
-                    href="/articles" 
-                    className={`block px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 ${!currentSlug ? 'bg-blue-600 text-white' : 'bg-gray-50 text-gray-700 hover:bg-gray-100'}`}
-                >
-                    View All
-                </Link>
+                 
             </div>
         </div>
         
