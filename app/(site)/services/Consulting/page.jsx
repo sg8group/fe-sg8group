@@ -1,9 +1,21 @@
-import React from 'react'
+"use client";
 
-function page() {
+import Consultinghero from "./Consultinghero";
+import Consultingintro from "./Consultingintro"; 
+import TailoredSolutions from "./TailoredSolutions";
+import Sectionourservices from "./Sectionourservices";
+import OurServices from "@/components/sections/service/OurServices";
+import OurClient from "@/components/sections/OurClient";
+
+export default function ConsultingPage() {
   return (
-    <div>page</div>
-  )
+    <main className="min-h-screen bg-white">
+      <Consultinghero />
+      <Consultingintro />
+      <TailoredSolutions />
+      <Sectionourservices />
+      <OurServices />
+      <OurClient />
+    </main>
+  );
 }
-
-export default page
