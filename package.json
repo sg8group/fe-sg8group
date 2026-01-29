@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroui/navbar": "^2.2.27",
+    "@iconify/react": "^6.0.2",
     "embla-carousel-react": "^8.6.0",
     "motion": "^12.29.2",
     "next": "15.5.9",
@@ -19,6 +20,8 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@iconify/json": "^2.2.432",
+    "@iconify/tailwind4": "^1.2.1",
     "@tailwindcss/postcss": "^4",
     "@tailwindcss/typography": "^0.5.19",
     "eslint": "^9",

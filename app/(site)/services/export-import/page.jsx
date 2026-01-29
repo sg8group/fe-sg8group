@@ -2,8 +2,8 @@ import React from "react";
 import Hero from "./components/Hero";
 import OurClient from "@/components/sections/OurClient";
 import SectionForMore from "./sections/SectionForMore";
-import Container from "@/components/layouts/Container";
 import SectionWhatWeDo from "./sections/SectionWhatWeDo";
+import SectionOurPremium from "./sections/SectionOurPremium";
 
 function page() {
   return (
@@ -11,6 +11,7 @@ function page() {
       <Hero />
       <SectionForMore />
       <SectionWhatWeDo />
+      <SectionOurPremium />
       <OurClient />
     </>
   );

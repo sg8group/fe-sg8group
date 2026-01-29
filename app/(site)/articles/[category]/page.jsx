@@ -77,21 +77,6 @@ import { dummyArticles } from "@/constants/dummyArticles";
       }
     }
 
-    // Helper untuk filter dummy data berdasarkan kategori/slug
-    function filterDummyData(slug) {
-        // Jika tidak ada slug (halaman utama artikel), kembalikan semua
-        if (!slug || slug === 'all') return dummyArticles;
-        
-        // Filter berdasarkan topic name (case insensitive & replace dash)
-        // misal slug: "cleaning-hygiene" -> cocokkan dengan "Cleaning & Hygiene" atau simple includes
-        const formattedSlug = slug.replace(/-/g, ' ').toLowerCase();
-        
-        return dummyArticles.filter(article => 
-            article.topic.name.toLowerCase().includes(formattedSlug) ||
-            article.topic.name.toLowerCase() === formattedSlug
-        );
-    }
-
   return (
     <>
       <Hero />
