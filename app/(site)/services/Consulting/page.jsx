@@ -9,7 +9,7 @@ import OurClient from "@/components/sections/OurClient";
 
 export default function ConsultingPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="bg-white">
       <Consultinghero />
       <Consultingintro />
       <TailoredSolutions />

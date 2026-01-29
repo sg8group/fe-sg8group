@@ -12,7 +12,7 @@ export default function ConsultingHero() {
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="text-white text-3xl md:text-5xl lg:text-4xl font-bold max-w-5xl mx-auto leading-tight"
+          className="text-white text-3xl md:text-5xl lg:text-3xl font-bold max-w-5xl mx-auto leading-tight"
         >
           Unlock Your Business Potential with <br /> Business Expert Consulting
         </motion.h1>
