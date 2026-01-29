@@ -18,25 +18,25 @@ function SectionOurPremium() {
             </p>
           </div>
           <div class="grid grid-cols-2 gap-4 w-full order-1 lg:order-2">
-            <div class="overflow-hidden rounded-tl-3xl rounded-br-3xl">
+            <div className="overflow-hidden rounded-tl-3xl rounded-br-3xl">
               <img
-                src="/compro.png"
+                src="/footerImg.png"
                 alt="Office"
-                class="w-full h-full object-cover"
+                className="w-full h-full object-cover"
               />
             </div>
-            <div class="overflow-hidden rounded-tr-3xl rounded-bl-3xl row-span-2">
+            <div className ="overflow-hidden rounded-tr-3xl rounded-bl-3xl row-span-2">
               <img
-                src="/compro.png"
+                src="/heroImage.jpg"
                 alt="Logistics"
-                class="w-full h-full object-cover"
+                className="w-full h-full object-cover"
               />
             </div>
-            <div class="overflow-hidden rounded-bl-3xl rounded-tr-3xl">
+            <div className="overflow-hidden rounded-bl-3xl rounded-tr-3xl">
               <img
                 src="/compro.png"
                 alt="Meeting"
-                class="w-full h-full object-cover"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
