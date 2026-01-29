@@ -1,35 +1,34 @@
 import Container from "@/components/layouts/Container";
-import React from "react";
+import ContainerBox from "./ContainerBox";
 
-function SectionHorizonBox() {
+function CareerFeatureSection() {
   return (
     <Container>
-      <section className="grid grid-cols-3 gap-15 items-start my-10 text-center">
-        <div className="bg-[#1c2b4f] p-2 grid ">
-          <p className="font-bold text-xl p-2">Penetapan Tujuan Professional</p>
+      <section className="py-5  bg-white">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+          {/* Card kiri */}
+          <ContainerBox
+            title="Penetapan Tujuan Profesional"
+            description="Melibatkan dialog antara karyawan dengan atasan atau HR untuk menetapkan sasaran karir yang jelas dan realistis..."
+            image="/recruitment/people-development/people-thumb.jpg"
+          />
 
-          <p>
-            Melibatkan dialog antara karyawan dengan atasan atau HR untuk
-            menetapkan sasaran karir yang jelas dan realistis. Hal ini mencakup
-            identifikasi posisi atau peran yang diinginkan di masa depan.
-          </p>
+          {/* Card tengah (highlight) */}
+          <ContainerBox
+            // title="Platform Manajemen Karir"
+            description="SG8 Group menyediakan platform online untuk manajemen karir, di mana karyawan dapat mengakses informasi peluang pengembangan..."
+          />
+
+          {/* Card kanan */}
+          <ContainerBox
+            title="Evaluasi Kompetensi"
+            description="Dilakukan secara periodik untuk menilai kesesuaian antara kemampuan yang dimiliki dengan kompetensi yang dibutuhkan..."
+            image="/recruitment/people-development/people-thumb.jpg"
+          />
         </div>
-
-        {/* <div className="bg-[#1c2b4f] p-2">asdsad</div>
-
-        <div className="bg-[#1c2b4f] p-2">
-          <p className="font-bold text-xl p-2">Evaluasi Kompetensi</p>
-
-          <p>
-            Dilakukan secara periodik untuk menilai kesesuaian antara kemampuan
-            yang dimiliki dengan kompetensi yang dibutuhkan untuk mencapai
-            tujuan karir tersebut. Evaluasi ini bisa dilakukan melalui
-            assessment, review kinerja, atau feedback 360 derajat.
-          </p>
-        </div> */}
       </section>
     </Container>
   );
 }
 
-export default SectionHorizonBox;
+export default CareerFeatureSection;

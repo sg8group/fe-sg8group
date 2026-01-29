@@ -7,6 +7,7 @@ import SectionPengembangan from "../sections/people-development/SectionMiniText"
 import SectionTripleBox from "../sections/people-development/SectionTripleBox";
 import ContainerHeadBody from "../sections/people-development/ContainerHeadBody";
 import SectionHorizonBox from "../sections/people-development/SectionHorizonBox";
+import SectionLastBox from "../sections/people-development/SectionLastBox";
 
 function page() {
   return (
@@ -30,6 +31,11 @@ function page() {
         text="Manajemen karir merupakan suatu upaya strategis untuk membantu karyawan merencanakan, mengelola, dan mengarahkan jalur karir mereka di dalam organisasi. Pendekatan ini memastikan bahwa perkembangan profesional karyawan sejalan dengan kebutuhan dan tujuan strategis perusahaan. Hal ini terdapat pada:"
       />
       <SectionHorizonBox />
+      <ContainerHeadBody
+        title="Evaluasi dan Umpan Balik"
+        text="Evaluasi dan umpan balik merupakan suatu proses sistematis untuk menilai perkembangan kompetensi karyawan serta efektivitas program pengembangan yang telah dijalankan. Tujuan utama dari proses ini adalah untuk mengidentifikasi area yang perlu ditingkatkan dan memberikan arahan yang konstruktif untuk pengembangan lebih lanjut. Hal yang biasa Kami lakukan meliputi:"
+      />
+      <SectionLastBox />
     </>
   );
 }
