@@ -6,6 +6,7 @@ import TailoredSolutions from "./TailoredSolutions";
 import Sectionourservices from "./Sectionourservices";
 import OurServices from "@/components/sections/service/OurServices";
 import OurClient from "@/components/sections/OurClient";
+import Sectionchoose from "./Sectionchoose";
 
 export default function ConsultingPage() {
   return (
@@ -14,6 +15,7 @@ export default function ConsultingPage() {
       <Consultingintro />
       <TailoredSolutions />
       <Sectionourservices />
+      <Sectionchoose />
       <OurServices />
       <OurClient />
     </main>
