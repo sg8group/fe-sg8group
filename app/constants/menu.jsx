@@ -22,6 +22,7 @@ export const MENU = [
     },
     {
         name: "Recruitment",
+        path: "/recruitment",
         children: [
             { label: "Agent of Change", path: "/recruitment/agent-of-change" },
             { label: "People Development", path: "/recruitment/people-development" },
