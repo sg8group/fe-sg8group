@@ -22,7 +22,7 @@ export default function OurMindset() {
                         text-xl sm:text-2xl lg:text-3xl
                         font-semibold
                         mb-10
-                        pt-8
+                        sm:pt-8
                         tracking-wide
                     ">
                         OUR MINDSET

@@ -22,6 +22,7 @@ export const MENU = [
     },
     {
         name: "Recruitment",
+        path: "/recruitment",
         children: [
             { label: "Agent of Change", path: "/recruitment/agent-of-change" },
             { label: "People Development", path: "/recruitment/people-development" },
@@ -30,14 +31,14 @@ export const MENU = [
     {
         name: "Article",
         children: [
-            { label: "Business", path: "/article/business" },
-            { label: "Capital", path: "/article/capital" },
-            { label: "Cleaning & Hygiene", path: "/article/cleaning-hygiene" },
-            { label: "Hospitality", path: "/article/hospitality" },
-            { label: "Legal", path: "/article/legal" },
-            { label: "Organization Development", path: "/article/organization-development" },
-            { label: "Psychology", path: "/article/psychology" },
-            { label: "Sales Marketing", path: "/article/sales-marketing" },
+            { label: "Business", path: "/articles/business" },
+            { label: "Capital", path: "/articles/capital" },
+            { label: "Cleaning & Hygiene", path: "/articles/cleaning-hygiene" },
+            { label: "Hospitality", path: "/articles/hospitality" },
+            { label: "Legal", path: "/articles/legal" },
+            { label: "Organization Development", path: "/articles/organization-development" },
+            { label: "Psychology", path: "/articles/psychology" },
+            { label: "Sales Marketing", path: "/articles/sales-marketing" },
         ],
     },
 ];
