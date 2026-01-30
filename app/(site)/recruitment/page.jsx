@@ -3,12 +3,14 @@ import RecruitHero from './sections/RecruitHero'
 import Container from '@/components/layouts/Container'
 import Search from './sections/Search'
 import Job from './sections/Job'
+import NJob from './sections/NJob'
 
 function RecruitmenPage() {
   return (
     <>
       <RecruitHero />
       <Search />
+      <NJob />
       <Job />
     </>
   )
