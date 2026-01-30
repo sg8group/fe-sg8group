@@ -25,9 +25,6 @@
     "@tailwindcss/postcss": "^4",
     "daisyui": "^5.5.14",
     "@tailwindcss/typography": "^0.5.19",
-=========
-    "daisyui": "^5.5.14",
->>>>>>>>> Temporary merge branch 2
     "eslint": "^9",
     "eslint-config-next": "15.5.9",
     "tailwindcss": "^4"
