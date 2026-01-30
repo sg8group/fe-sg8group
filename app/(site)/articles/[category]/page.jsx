@@ -87,7 +87,7 @@ import { dummyArticles } from "@/constants/dummyArticles";
         const formattedSlug = slug.replace(/-/g, ' ').toLowerCase();
         
         return dummyArticles.filter(article => 
-            article.topic.name.toLowerCase().includes(formattedSlug) ||
+          article.topic.name.toLowerCase().includes(formattedSlug) ||
             article.topic.name.toLowerCase() === formattedSlug
         );
     }

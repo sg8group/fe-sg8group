@@ -36,6 +36,7 @@ function SideContent() {
           <strong>SG8 Consulting</strong> (For Business Growth Services)
         </li>
       </ol>
+      
 
       <div className="hidden lg:block text-gray-700 mt-5">
         <p className="section-title text-md font-medium leading-relaxed normal-case">
