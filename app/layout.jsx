@@ -1,5 +1,5 @@
 import Footer from "./components/layouts/Footer";
-import Navbar from "./components/layouts/navbar/Navbar";
+import NavbarWrapper from "./components/layouts/navbar/NavbarWrapper";
 import "./globals.css";
 import { Montserrat, Poppins } from "next/font/google";
 
@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
       <body className="antialiased bg-white relative min-h-screen overflow-x-hidden">
         <div className="pointer-events-none fixed inset-x-0 top-0 z-50">
           <div className="pointer-events-auto">
-            <Navbar />
+            <NavbarWrapper />
           </div>
         </div>
         {children}

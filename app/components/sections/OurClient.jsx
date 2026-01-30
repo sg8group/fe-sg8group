@@ -69,7 +69,7 @@ export default function OurClient() {
                                 {[...row, ...row].map((client, i) => (
                                     <div
                                         key={client.title + i}
-                                        className="min-w-35 opacity-80"
+                                        className="min-w-35 h-20 opacity-80 flex items-center justify-center"
                                     >
                                         <Image
                                             src={client.img}

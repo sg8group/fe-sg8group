@@ -14,7 +14,7 @@ export default function OurServices() {
     return (
         <section className="bg-white py-16">
             <Container>
-                <h2 className="section-title text-2xl sm:text-3xl lg:text-4xl text-center text-black font-semibold mb-12">
+                <h2 className="section-title text-2xl sm:text-3xl lg:text-4xl text-center text-black font-semibold">
                     Our Services
                 </h2>
                 <div className="w-full px-4 md:px-6">
