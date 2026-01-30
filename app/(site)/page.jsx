@@ -1,5 +1,4 @@
 import RecruitmentCTA from "@/components/sections/recruitment-CTA/RecruitmentCTA";
-import Navbar from "../components/layouts/navbar/Navbar";
 import Hero from "../components/sections/Hero";
 import IntroStats from "../components/sections/intro-stats/IntroStats";
 import OurMindset from "../components/sections/OurMindset";

@@ -46,7 +46,7 @@ export default function OurClient() {
         visible: { opacity: 1, scale: 1 },
     }
     return (
-        <section ref={sectionRef} className="py-16">
+        <section ref={sectionRef} className="py-16 overflow-hidden w-full">
             <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}

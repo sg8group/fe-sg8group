@@ -4,7 +4,7 @@ export default function Hero() {
     return (
         <section className="relative h-dvh w-screen overflow-hidden pt20 md:pt-22">
             <Image
-                src="/heroImage.jpg"
+                src="/compro.png"
                 alt="SG8 Background"
                 fill
                 className="object-cover object-center"
