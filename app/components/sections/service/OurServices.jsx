@@ -7,7 +7,7 @@ import Container from "@/components/layouts/Container";
 
 export default function OurServices() {
     const [emblaRef] = useEmblaCarousel({
-        align: "start",
+        align: "center",
         containScroll: "trimSnaps",
         dragFree: false,
     })
