@@ -8,7 +8,7 @@ const { default: Hero } = require("@/components/sections/Hero");
 export default function CorporateValuePage() {
   return (
     <>
-      <Corporatehero />
+      <Hero title="Corporate Values" />
        <section className="py-24 bg-white">
         <div className="container mx-auto px-4 md:px-12 lg:px-24">
           <div className="max-w-5xl mx-auto text-center space-y-10">

@@ -12,7 +12,7 @@ import Hero from "@/components/sections/Hero";
 export default function ConsultingPage() {
   return (
     <main className="bg-white">
-      <Hero/>
+      <Hero title="Consulting Services" />
       <Consultingintro />
       <TailoredSolutions />
       <Sectionourservices />

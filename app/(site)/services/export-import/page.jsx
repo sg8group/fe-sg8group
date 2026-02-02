@@ -8,7 +8,7 @@ import SectionOurPremium from "./sections/SectionOurPremium";
 function page() {
   return (
     <>
-      <Hero />
+      <Hero title="Export & Import Services" />
       <SectionForMore />
       <SectionWhatWeDo />
       <SectionOurPremium />
