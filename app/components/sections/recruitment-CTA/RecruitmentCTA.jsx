@@ -14,6 +14,7 @@ export default function RecruitmentCTA() {
                         src="/placeholder.jpg"
                         alt="SG8 Team"
                         fill
+                        sizes="100vw"
                         className="object-cover w-full h-full"
                     />
                 </div>
