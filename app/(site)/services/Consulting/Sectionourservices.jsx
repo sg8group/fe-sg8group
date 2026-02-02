@@ -80,7 +80,7 @@ function Sectionourservices() {
 
   return (
     <Container>
-      <h2 className="text-3xl font-bold text-center mb-12 text-[#1a2b4b]">
+      <h2 className="text-3xl font-bold text-center my-12 text-[#1a2b4b]">
         Our Services
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
