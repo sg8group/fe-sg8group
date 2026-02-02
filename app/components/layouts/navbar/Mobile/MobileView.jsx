@@ -1,11 +1,20 @@
-import { motion, AnimatePresence } from "framer-motion";
 import { MENU } from "@/constants/menu";
 import MobileMenuItem from "./MobileMenuItem";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
 
-export default function MobileView({ open, setMobileOpen, activeMenu, setActiveMenu }) {
+export default function MobileView({
+    topics,
+    open,
+    setMobileOpen,
+    activeMenu,
+    openMenu,
+    setOpenMenu,
+}) {
+    if (!open) return null;
+
     return (
-        <AnimatePresence>
+        <AnimatePresence> 
             {open && (
                 <>
                     <motion.div
@@ -13,25 +22,24 @@ export default function MobileView({ open, setMobileOpen, activeMenu, setActiveM
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         className="fixed inset-0 z-40 bg-black/10"
-                        onClick={() => {
-                            setActiveMenu(null);
-                            setMobileOpen(false);
-                        }}
+                        onClick={() => { setOpenMenu(null); setMobileOpen(false); }}
                     />
                     <motion.div
                         initial={{ opacity: 0, y: -8 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -8 }}
                         onClick={(e) => e.stopPropagation()}
-                        className="relative z-50 mt-3 mx-4 sm:mx-6 rounded-xl bg-white lg:hidden shadow-lg"
-                    >
+                        className="relative z-50 mt-3 mx-4 sm:mx-6 rounded-xl bg-white lg:hidden shadow-lg" >
                         <ul className="divide-y">
                             {MENU.map(item => (
                                 <MobileMenuItem
                                     key={item.name}
                                     item={item}
+                                    topics={topics}
                                     activeMenu={activeMenu}
-                                    setActiveMenu={setActiveMenu}
+                                    openMenu={openMenu}
+                                    setOpenMenu={setOpenMenu}
+                                    closeMenu={() => setMobileOpen(false)}
                                 />
                             ))}
                             <div className="flex justify-center gap-6 py-4">
@@ -43,7 +51,6 @@ export default function MobileView({ open, setMobileOpen, activeMenu, setActiveM
                                 </a>
                             </div>
                         </ul>
-                        
                     </motion.div>
                 </>
             )}

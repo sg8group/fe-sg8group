@@ -1,3 +1,7 @@
+import { getTopics } from "@/services/api";
+
+const topics = await getTopics();
+
 export const MENU = [
     { 
         name: "Home", 
@@ -28,17 +32,5 @@ export const MENU = [
             { label: "People Development", path: "/recruitment/people-development" },
         ],
     },
-    {
-        name: "Article",
-        children: [
-            { label: "Business", path: "/articles/business" },
-            { label: "Capital", path: "/articles/capital" },
-            { label: "Cleaning & Hygiene", path: "/articles/cleaning-hygiene" },
-            { label: "Hospitality", path: "/articles/hospitality" },
-            { label: "Legal", path: "/articles/legal" },
-            { label: "Organization Development", path: "/articles/organization-development" },
-            { label: "Psychology", path: "/articles/psychology" },
-            { label: "Sales Marketing", path: "/articles/sales-marketing" },
-        ],
-    },
+    { name: "Article", },
 ];

@@ -1,12 +1,9 @@
-
 import React from 'react'
 import ArticleCard from "../components/ArticleCard";
 
-
-
-function MainContent({ articles, pageTitle }) {
+function MainContent({ articles =[], pageTitle }) {
   
-  if (!articles || articles.length === 0) {
+  if (!articles.length) {
     return (
       <div className="text-center py-10">
         <h2 className="text-xl font-semibold text-gray-600">No articles found for {pageTitle}</h2>
