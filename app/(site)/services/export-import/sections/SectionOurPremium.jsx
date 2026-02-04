@@ -1,4 +1,4 @@
-import Container from "@/components/layouts/Container";
+import Container from "@/components/ui/Container";
 import React from "react";
 
 function SectionOurPremium() {
@@ -17,7 +17,7 @@ function SectionOurPremium() {
               globally, and are trusted for handling complex client needs.
             </p>
           </div>
-          <div class="grid grid-cols-2 gap-4 w-full order-1 lg:order-2">
+          <div className="grid grid-cols-2 gap-4 w-full order-1 lg:order-2">
             <div className="overflow-hidden rounded-tl-3xl rounded-br-3xl">
               <img
                 src="/footerImg.png"

@@ -1,4 +1,4 @@
-import SocialLinks from "@/components/common/SocialLinks";
+import SocialLinks from "@/components/ui/SocialLinks";
 import Image from "next/image";
 import React from "react";
 

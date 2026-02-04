@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import SocialLinks from "@/components/common/SocialLinks";
+import SocialLinks from "@/components/ui/SocialLinks";
 
 function Sidebar({ topics = [], activeCategory = "" }) {
     const router = useRouter();

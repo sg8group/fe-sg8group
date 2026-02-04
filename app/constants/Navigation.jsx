@@ -1,7 +1,3 @@
-import { getTopics } from "@/services/api";
-
-const topics = await getTopics();
-
 export const MENU = [
     { 
         name: "Home", 

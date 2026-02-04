@@ -1,9 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import Hero from "@/components/sections/Hero";
-import OurClient from "@/components/sections/OurClient";
-import OurMindset from "@/components/sections/OurMindset";
+import Hero from "@/components/shared/Hero";
+import OurClient from "@/components/shared/OurClient";
 import { motion } from "framer-motion";
 
 export default function ManpowerSupplyPage() {
@@ -122,7 +121,6 @@ export default function ManpowerSupplyPage() {
         </div>
       </section>
 
-    
       <section className="py-24 bg-white overflow-hidden">
         <div className="container mx-auto px-4 md:px-12 lg:px-24">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1a2b4b] text-center mb-16 tracking-widest uppercase">

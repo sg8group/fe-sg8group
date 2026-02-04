@@ -1,9 +1,9 @@
-import OurClient from "@/components/sections/OurClient";
-import OurMindset from "@/components/sections/OurMindset";
-import OurServices from "@/components/sections/service/OurServices";
+import OurClient from "@/components/shared/OurClient";
+import OurMindset from "@/components/shared/OurMindset";
+import OurServices from "@/components/shared/service/OurServices";
 import Corporatehero from "./Corporatehero";
 
-const { default: Hero } = require("@/components/sections/Hero");
+const { default: Hero } = require("@/components/shared/Hero");
 
 export default function CorporateValuePage() {
   return (

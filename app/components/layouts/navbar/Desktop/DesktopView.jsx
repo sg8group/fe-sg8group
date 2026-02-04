@@ -1,4 +1,4 @@
-import { MENU } from "@/constants/menu";
+import { MENU } from "@/constants/Navigation";
 import DesktopMenuItem from "./DesktopMenuItem";
 
 export default function DesktopView({

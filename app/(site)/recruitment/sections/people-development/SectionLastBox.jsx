@@ -1,6 +1,6 @@
 import React from "react";
 import ContainerBox from "./ContainerBox";
-import Container from "@/components/layouts/Container";
+import Container from "@/components/ui/Container";
 
 function SectionLastBox() {
   return (

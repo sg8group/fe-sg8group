@@ -1,4 +1,4 @@
-import Container from "@/components/layouts/Container";
+import Container from "@/components/ui/Container";
 import React from "react";
 import BoxContainer from "../components/BoxContainer";
 import { WhatWeDo }  from "../Data";

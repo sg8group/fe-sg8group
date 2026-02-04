@@ -1,9 +1,9 @@
-import RecruitmentCTA from "@/components/sections/recruitment-CTA/RecruitmentCTA";
-import Hero from "../components/sections/Hero";
-import IntroStats from "../components/sections/intro-stats/IntroStats";
-import OurMindset from "../components/sections/OurMindset";
-import OurServices from "../components/sections/service/OurServices";
-import OurClient from "@/components/sections/OurClient";
+import RecruitmentCTA from "@/components/shared/recruitment-CTA/RecruitmentCTA";
+import Hero from "../components/shared/Hero";
+import IntroStats from "../components/shared/intro-stats/IntroStats";
+import OurMindset from "../components/shared/OurMindset";
+import OurServices from "../components/shared/service/OurServices";
+import OurClient from "@/components/shared/OurClient";
 
 export default function Home() {
   return (

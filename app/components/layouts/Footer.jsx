@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import Container from "../layouts/Container";
-import SocialLinks from "../common/SocialLinks";
+import Container from "../ui/Container";
+import SocialLinks from "../ui/SocialLinks";
 import { FaLocationDot, FaPhone } from "react-icons/fa6";
 import { FiClock } from "react-icons/fi";
-import InfoBlock from "../common/InfoBlock";
+import InfoBlock from "../ui/InfoBlock";
 
 export default function Footer() {
     return (

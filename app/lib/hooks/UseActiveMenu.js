@@ -1,6 +1,6 @@
 import {
     MENU
-} from "@/constants/menu";
+} from "@/constants/Navigation";
 
 export function useActiveMenu(pathname) {
 

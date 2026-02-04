@@ -5,8 +5,8 @@ import { usePathname } from "next/navigation";
 import NavbarShell from "./NavbarShell";
 import DesktopView from "./Desktop/DesktopView";
 import MobileView from "./Mobile/MobileView";
-import { useNavbarState } from "./hooks/useNavbarState";
-import { useActiveMenu } from "./hooks/UseActiveMenu";
+import { useNavbarState } from "../../../lib/hooks/useNavbarState";
+import { useActiveMenu } from "../../../lib/hooks/UseActiveMenu";
 
 export default function Navbar({ topics=[] }) {
     const pathname = usePathname();

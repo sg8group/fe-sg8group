@@ -1,4 +1,4 @@
-import Container from "@/components/layouts/Container";
+import Container from "@/components/ui/Container";
 import React from "react";
 
 function LastContent() {

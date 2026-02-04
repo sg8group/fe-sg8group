@@ -1,5 +1,5 @@
 import React from 'react';
-import OurClient from '@/components/sections/OurClient';
+import OurClient from '@/components/shared/OurClient';
 import Image from 'next/image';
 import Philosophyhero from './Philosophyhero';
 

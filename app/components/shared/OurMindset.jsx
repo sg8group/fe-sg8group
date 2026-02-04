@@ -1,7 +1,7 @@
 "use client";
 
 import { MINDSETS } from "@/constants/mindset";
-import Container from "../layouts/Container";
+import Container from "../ui/Container";
 
 
 export default function OurMindset() {

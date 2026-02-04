@@ -1,4 +1,4 @@
-import { MENU } from "@/constants/menu";
+import { MENU } from "@/constants/Navigation";
 import MobileMenuItem from "./MobileMenuItem";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";

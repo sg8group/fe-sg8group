@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import Container from "@/components/layouts/Container";
+import Container from "@/components/ui/Container";
 import SideContent from "../../sections/SideContent";
-import { getArticleDetailBySlug } from "@/services/api";
+import { getArticleDetailBySlug } from "@/lib/api";
 
 export default async function ArticleDetailPage({ params }) {
 

@@ -3,8 +3,8 @@
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaChevronDown } from "react-icons/fa";
-import { isMenuActive, isMenuOpen } from "@/utils/MenuState";
-import { getMenuChildren, hasMenuChildren } from "@/utils/MenuHelpers";
+import { isMenuActive, isMenuOpen } from "@/lib/utils/MenuState";
+import { getMenuChildren, hasMenuChildren } from "@/lib/utils/MenuHelpers";
 
 export default function DesktopMenuItem({
     item,

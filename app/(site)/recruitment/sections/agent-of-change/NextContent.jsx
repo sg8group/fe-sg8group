@@ -1,4 +1,4 @@
-import Container from "@/components/layouts/Container";
+import Container from "@/components/ui/Container";
 import { Content } from "next/font/google";
 import React from "react";
 import BoxContainer from "./BoxContainer";

@@ -1,4 +1,4 @@
-import { getTopics } from "@/services/api";
+import { getTopics } from "@/lib/api";
 import Navbar from "./Navbar";
 
 export default async function NavbarWrapper() {

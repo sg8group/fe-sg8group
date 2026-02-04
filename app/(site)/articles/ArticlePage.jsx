@@ -1,8 +1,8 @@
 import Sidebar from "./components/Sidebar";
 import MainContent from "./sections/MainContent";
-import Container from "@/components/layouts/Container";
-import Hero from "@/components/sections/Hero";
-import { getArticles, getTopics } from "@/services/api";
+import Container from "@/components/ui/Container";
+import Hero from "@/components/shared/Hero";
+import { getArticles, getTopics } from "@/lib/api";
 
 export default async function ArticlePage({ slug = "" }) {
     const [topics, articles] = await Promise.all([
