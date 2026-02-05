@@ -14,12 +14,11 @@ function Sidebar({ topics = [], activeCategory = "" }) {
     };
 
     if (!topics.length) {
-        return null; // ⬅️ jangan render sidebar kosong
+        return null;
     }
 
     return (
         <aside className="w-full lg:sticky lg:top-24 space-y-8 rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-            {/* ================= Topics ================= */}
             <section className="space-y-4">
                 <h3 className="text-black text-lg font-bold border-l-4 border-blue-600 px-3">
                     Topics

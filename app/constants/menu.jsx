@@ -1,6 +1,3 @@
-import { getTopics } from "@/services/api";
-
-const topics = await getTopics();
 
 export const MENU = [
     { 
@@ -32,5 +29,9 @@ export const MENU = [
             { label: "People Development", path: "/recruitment/people-development" },
         ],
     },
-    { name: "Article", },
+    { 
+        name: "Article", 
+        path: "/articles"
+    },
+    
 ];

@@ -5,7 +5,6 @@ import SideContent from "../../sections/SideContent";
 import { getArticleDetailBySlug } from "@/services/api";
 
 export default async function ArticleDetailPage({ params }) {
-
   const { slug } = params;
 
   const article = await getArticleDetailBySlug(slug);
@@ -13,14 +12,7 @@ export default async function ArticleDetailPage({ params }) {
   // Jika artikel tidak ditemukan di API, tampilkan halaman 404 Not Found
   if (!article) notFound();
 
-  const {
-    title,
-    image,
-    content,
-    author,
-    created_at,
-    topic,
-  } = article;
+  const { title, image, content, author, created_at, topic } = article;
 
   return (
     <Container>
@@ -40,11 +32,13 @@ export default async function ArticleDetailPage({ params }) {
 
           <p className="text-gray-500 mt-2 text-sm md:text-base gap-x-0 flex justify-center items-center flex-col md:flex-row md:gap-4">
             Published on{" "}
-            {created_at ? new Date(created_at).toLocaleDateString("id-ID", {
-              day: "numeric",
-              month: "long",
-              year: "numeric",
-            }) : "-"}
+            {created_at
+              ? new Date(created_at).toLocaleDateString("id-ID", {
+                  day: "numeric",
+                  month: "long",
+                  year: "numeric",
+                })
+              : "-"}
             {author && <span>by {author}</span>}
           </p>
         </div>
@@ -57,7 +51,7 @@ export default async function ArticleDetailPage({ params }) {
               alt={title || "Article Image"}
               fill
               className="object-cover"
-              priority 
+              priority
             />
           </div>
         )}
@@ -65,7 +59,14 @@ export default async function ArticleDetailPage({ params }) {
         {/* Content */}
         <div className="grid md:grid-cols-4 gap-10">
           <div
-            className="md:col-span-3 prose prose-lg prose-stone max-w-none leading-relaxed text-justify mb-10"
+            className="
+            md:col-span-3 
+            prose prose-lg prose-black max-w-none 
+            leading-relaxed text-justify mb-10
+            prose-headings:text-black 
+            prose-strong:text-black
+            prose-p:text-black
+            prose-li:text-black"
             // Pastikan field body/content sesuai respons API
             dangerouslySetInnerHTML={{ __html: content }}
           />
