@@ -11,7 +11,7 @@ function FilterBar({
     onSalaryChange,
 }) {
     return (
-        <div className="flex flex-wrap gap-4 ">
+        <div className="flex flex-wrap gap-4 my-5">
 
             <select
                 value={selectedLocation}

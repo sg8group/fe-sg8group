@@ -101,8 +101,8 @@ export default function JobPage() {
         </Container>
 
       </div>
-
       <Container>
+
         <FilterBar
           locations={locations}
           types={types}
@@ -114,6 +114,9 @@ export default function JobPage() {
           onSalaryChange={setSalaryRange}
           jobTypeLabel={jobTypeLabel}
         />
+      </Container>
+
+      <Container>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
           {currentJobs.map((job) => (
@@ -123,25 +126,27 @@ export default function JobPage() {
               location={job.location}
               type={jobTypeLabel[job.job_type]}
               salary={job.salary}
+              link={job.link_job}
             />
           ))}
         </div>
-
-        <div className="flex justify-center mt-10 gap-2">
-          {Array.from({ length: totalPages }).map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setCurrentPage(i + 1)}
-              className={`px-4 py-2 border rounded-md ${currentPage === i + 1
-                ? "bg-blue-600 text-white"
-                : "bg-white"
-                }`}
-            >
-              {i + 1}
-            </button>
-          ))}
-        </div>
       </Container>
+
+      <div className="flex justify-center mt-10 gap-2">
+        {Array.from({ length: totalPages }).map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrentPage(i + 1)}
+            className={`px-4 py-2 border rounded-md ${currentPage === i + 1
+              ? "bg-blue-600 text-white"
+              : "bg-white"
+              }`}
+          >
+            {i + 1}
+          </button>
+        ))}
+      </div>
+
     </div>
   );
 }

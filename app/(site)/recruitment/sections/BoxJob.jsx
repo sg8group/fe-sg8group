@@ -3,7 +3,7 @@ import { FiShoppingBag } from "react-icons/fi";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { PiCurrencyCircleDollarBold } from "react-icons/pi";
 
-function BoxJob({ jobname, location, type, salary }) {
+function BoxJob({ jobname, location, type, salary, link }) {
   return (
     <div className="bg-white border border-gray-400 p-5 m-2 rounded-xl shadow-sm flex flex-col justify-center">
       <div className="text-black font-semibold text-xl pb-2">
@@ -23,7 +23,9 @@ function BoxJob({ jobname, location, type, salary }) {
       </div>
 
       <div className="flex justify-end">
-        <button className="text-white bg-blue-500 px-3 py-1 rounded-sm">
+        <button
+          className="text-white bg-blue-500 px-3 py-1 rounded-sm"
+          onClick={() => window.location.href = link}>
           Apply Now
         </button>
       </div>
