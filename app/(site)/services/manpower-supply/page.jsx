@@ -82,7 +82,7 @@ export default function ManpowerSupplyPage() {
               </ul>
             </motion.div>
             <div className="w-full lg:w-1/2 flex justify-center">
-              <div className="relative w-full max-w-[450px] aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl">
+              <div className="relative w-full max-w-112.5 aspect-4/5 rounded-[40px] overflow-hidden shadow-2xl">
                 <Image src="/manpower-supply.png" alt="Manpower" fill className="object-cover" />
               </div>
             </div>
@@ -113,7 +113,7 @@ export default function ManpowerSupplyPage() {
               <button className="text-orange-500 font-bold hover:underline">Learn More →</button>
             </motion.div>
             <div className="w-full lg:w-1/2 flex justify-center">
-              <div className="relative w-full max-w-[450px] aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl">
+              <div className="relative w-full max-w-112.5 aspect-4/5 rounded-[40px] overflow-hidden shadow-2xl">
                 <Image src="/manpower-supply2.png" alt="Headhunting" fill className="object-cover" />
               </div>
             </div>
@@ -150,7 +150,7 @@ export default function ManpowerSupplyPage() {
           </div>
         </div>
       </section>
-      <section className="relative w-full h-[300px] md:h-[400px] flex items-center justify-center" overflow="hidden">
+      <section className="relative w-full h-75 md:h-100 flex items-center justify-center" overflow="hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="/manpower-supply3.png"

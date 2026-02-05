@@ -28,5 +28,5 @@ export const MENU = [
             { label: "People Development", path: "/recruitment/people-development" },
         ],
     },
-    { name: "Article", },
+    { name: "Article", path: "/articles" },
 ];
