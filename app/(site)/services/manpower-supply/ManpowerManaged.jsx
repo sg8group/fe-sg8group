@@ -2,9 +2,12 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const managedFeatures = [
-  "Long-Term Contract Staffing", "Workforce Planning & Optimization",
-  "End-to-End HR & Payroll Management", "Compliance & Risk Management",
-  "Training & Skill Development", "Flexible Workforce Scaling",
+  "Long-Term Contract Staffing",
+  "Workforce Planning & Optimization",
+  "End-to-End HR & Payroll Management",
+  "Compliance & Risk Management",
+  "Training & Skill Development",
+  "Flexible Workforce Scaling",
 ];
 
 export default function ManpowerManaged() {
@@ -21,11 +24,15 @@ export default function ManpowerManaged() {
               Managed <br /> Workforce Solutions
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Our comprehensive service for providing skilled workers on a one-year contract basis...
+              Our comprehensive service for providing skilled workers on a
+              one-year contract basis...
             </p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
               {managedFeatures.map((item, idx) => (
-                <li key={idx} className="flex items-center space-x-3 text-gray-700 font-medium">
+                <li
+                  key={idx}
+                  className="flex items-center space-x-3 text-gray-700 font-medium"
+                >
                   <span className="text-blue-500 font-bold">✓</span>
                   <span>{item}</span>
                 </li>
@@ -34,7 +41,12 @@ export default function ManpowerManaged() {
           </motion.div>
           <div className="w-full lg:w-1/2 flex justify-center">
             <div className="relative w-full max-w-[450px] aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl">
-              <Image src="/manpower-supply.png" alt="Manpower" fill className="object-cover" />
+              <Image
+                src="/manpower-supply.png"
+                alt="Manpower"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
