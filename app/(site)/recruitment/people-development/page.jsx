@@ -1,5 +1,4 @@
 import React from "react";
-import PeopleHero from "../sections/people-development/PeopleHero";
 import SectionDiEra from "../sections/people-development/SectionDiEra";
 import SectionDoubleImage from "../sections/people-development/SectionDoubleImage";
 import SectionBackImage from "../sections/people-development/SectionBackImage";
@@ -8,11 +7,12 @@ import SectionTripleBox from "../sections/people-development/SectionTripleBox";
 import ContainerHeadBody from "../sections/people-development/ContainerHeadBody";
 import SectionHorizonBox from "../sections/people-development/SectionHorizonBox";
 import SectionLastBox from "../sections/people-development/SectionLastBox";
+import Hero from "@/components/sections/Hero";
 
 function page() {
   return (
     <>
-      <PeopleHero />
+      <Hero title="People Development"/>
       <SectionDiEra />
       <SectionDoubleImage />
       <ContainerHeadBody
