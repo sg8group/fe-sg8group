@@ -1,14 +1,14 @@
 import React from 'react'
-import AgentHero from '../sections/agent-of-change/AgentHero'
-import ContentText from '../sections/agent-of-change/ContentText'
-import MainContent from '../sections/agent-of-change/MainContent'
-import NextContent from '../sections/agent-of-change/NextContent'
-import LastContent from '../sections/agent-of-change/LastContent'
+import ContentText from './sections/ContentText'
+import MainContent from './sections/MainContent'
+import NextContent from './sections/NextContent'
+import LastContent from './sections/LastContent'
+import Hero from '@/components/shared/Hero'
 
 function AgentOfChange() {
   return (
     <>
-      <AgentHero />
+      <Hero title="Agent Of Change"/>
       <ContentText />
       <MainContent />
       <NextContent />

@@ -17,3 +17,15 @@ export async function getArticleDetailBySlug(slug) {
     const res = await api.get(`/articles/${slug}`);
     return res.data.data;
 }
+
+// fungi mengambil data api recruitment
+export async function getRecruitments(params = {}) {
+    const res = await api.get("/recruitments", { params });
+    console.log("Data", res.data)
+    return res.data;
+}
+
+export async function  getRecruitmentsDetailBySlug (slug) {
+    const res = await api.get(`/recruitments/${slug}`);
+    return res.data.data;
+}

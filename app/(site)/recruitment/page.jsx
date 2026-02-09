@@ -1,16 +1,11 @@
 import React from 'react'
-import RecruitHero from './sections/RecruitHero'
-import Container from '@/components/ui/Container'
-import Search from './sections/Search'
 import Job from './sections/Job'
-import NJob from './sections/NJob'
+import Hero from '@/components/shared/Hero'
 
 function RecruitmenPage() {
   return (
     <>
-      <RecruitHero />
-      <Search />
-      <NJob />
+      <Hero title="Recruitment" />
       <Job />
     </>
   )

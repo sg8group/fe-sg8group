@@ -1,18 +1,18 @@
+import Hero from "@/components/shared/Hero";
 import React from "react";
-import PeopleHero from "../sections/people-development/PeopleHero";
-import SectionDiEra from "../sections/people-development/SectionDiEra";
-import SectionDoubleImage from "../sections/people-development/SectionDoubleImage";
-import SectionBackImage from "../sections/people-development/SectionBackImage";
-import SectionPengembangan from "../sections/people-development/SectionMiniText";
-import SectionTripleBox from "../sections/people-development/SectionTripleBox";
-import ContainerHeadBody from "../sections/people-development/ContainerHeadBody";
-import SectionHorizonBox from "../sections/people-development/SectionHorizonBox";
-import SectionLastBox from "../sections/people-development/SectionLastBox";
+import SectionDiEra from "./sections/SectionDiEra";
+import SectionDoubleImage from "./sections/SectionDoubleImage";
+import ContainerHeadBody from "./sections/ContainerHeadBody";
+import SectionBackImage from "./sections/SectionBackImage";
+import SectionPengembangan from "./sections/SectionMiniText";
+import SectionTripleBox from "./sections/SectionTripleBox";
+import SectionLastBox from "./sections/SectionLastBox";
+import SectionHorizonBox from "./sections/SectionHorizonBox";
 
 function page() {
   return (
     <>
-      <PeopleHero />
+      <Hero title="People Development"/>
       <SectionDiEra />
       <SectionDoubleImage />
       <ContainerHeadBody

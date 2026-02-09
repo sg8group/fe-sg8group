@@ -30,7 +30,7 @@ function SectionTripleBox() {
           </p>
         </div>
       </section>
-      <section className="bg-[#1c2b4f] p-5 rounded-xl">
+      <section className="bg-[#1c2b4f] p-5 my-5 rounded-xl">
         <p className="text-lg text-justify [text-align-last:center]">
           SG8 Group mengembangkan program “leadership academy” di mana karyawan
           terpilih mengikuti rangkaian pelatihan intensif dan penugasan rotasi
