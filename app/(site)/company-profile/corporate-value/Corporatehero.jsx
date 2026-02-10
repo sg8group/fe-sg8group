@@ -2,6 +2,8 @@ import Image from "next/image";
 
 export default function Hero() {
     return (
+        <Container>
+
         <section className="relative h-dvh w-screen overflow-hidden pt20 md:pt-22">
             <Image
                 src="/compro.png"
@@ -16,5 +18,6 @@ export default function Hero() {
                 <h1 className="text-white heading text-4xl lg:text-7xl sm:text-5xl">SG Lapan Group</h1>
             </div>
         </section>
+        </Container>
     );
 }

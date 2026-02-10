@@ -2,6 +2,7 @@ import React from "react";
 
 function ValueGrid() {
   return (
+
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4 md:px-12 lg:px-24">
         <div className="text-center mb-16">
@@ -33,5 +34,6 @@ function ValueGrid() {
     </section>
   );
 }
+          
 
 export default ValueGrid;

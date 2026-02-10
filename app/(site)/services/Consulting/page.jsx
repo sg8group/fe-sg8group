@@ -1,6 +1,6 @@
 "use client";
 
-import Consultinghero from "./Consultinghero";
+
 import Consultingintro from "./Consultingintro"; 
 import TailoredSolutions from "./TailoredSolutions";
 import Sectionourservices from "./Sectionourservices";
@@ -11,6 +11,7 @@ import Hero from "@/components/sections/Hero";
 
 export default function ConsultingPage() {
   return (
+    
     <main className="bg-white">
       <Hero title="Consulting Services" />
       <Consultingintro />
