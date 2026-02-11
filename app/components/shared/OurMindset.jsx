@@ -79,7 +79,7 @@ export default function OurMindset() {
                     </div>
                 </div>
                 <div className="mt-10">
-                    <div className="grid md:grid-cols-3 md:grid-rows-[1fr_auto] px-16">
+                    <div className="grid md:grid-cols-3 md:grid-rows-[1fr_auto]">
                         {/* QUOTE */}
                         <p
                             className="

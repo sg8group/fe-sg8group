@@ -7,7 +7,7 @@ export default function RecruitmentCTA() {
     <section className="bg-white py-16">
         <Container>
             {/* IMAGE + CTA */}
-            <div className="grid md:grid-cols-3 gap-8 md:px-16 items-stretch">
+            <div className="grid md:grid-cols-3 gap-8 items-stretch">
                 {/* IMAGE */}
                 <div className="md:col-span-1 relative rounded-2xl overflow-hidden bg-gray-200 min-h-55 md:min-h-0">
                     <Image

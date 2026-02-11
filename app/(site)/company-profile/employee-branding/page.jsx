@@ -1,15 +1,19 @@
+import Hero from "@/components/shared/Hero";
+import BrandingIntro from "./BrandingIntro";
+import BrandingValues from "./BrandingValues";
+import OurMindset from "@/components/shared/OurMindset";
 import OurClient from "@/components/shared/OurClient";
 import OurServices from "@/components/shared/service/OurServices";
-import Employeehero from "./Employeehero";
 
-const { default: Hero } = require("@/components/shared/Hero");
-
-export default function CorporateValuePage() {
+export default function EmployeeBrandingPage() {
   return (
     <>
-      <Employeehero/>
-      <OurClient/>
-      <OurServices/>
-      </>
-    );
+      <Hero title="Employee Branding" />
+      <BrandingIntro />
+      <BrandingValues />
+      <OurMindset />
+      <OurClient />
+      <OurServices />
+    </>
+  );
 }

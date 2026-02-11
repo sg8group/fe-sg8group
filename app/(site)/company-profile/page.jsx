@@ -21,5 +21,4 @@ function CompanyProfilePage() {
   );
 }
 
-
 export default CompanyProfilePage;

@@ -1,6 +1,6 @@
 import Container from "@/components/ui/Container";
 import React from "react";
-import BoxJob from "./BoxJob";
+import BoxJob from "./JobCard";
 
 function NJob() {
   return (

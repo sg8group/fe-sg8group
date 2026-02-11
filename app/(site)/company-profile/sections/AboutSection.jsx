@@ -1,3 +1,4 @@
+import Container from "@/components/ui/Container";
 import Image from "next/image";
 
 const companies = [
@@ -11,11 +12,10 @@ const companies = [
 export default function AboutSection() {
     return (
         <section className="py-20 bg-white">
-            <div className="container mx-auto px-4 md:px-12 lg:px-24">
+            <Container>
                 <div className="flex flex-col lg:flex-row items-center gap-12">
                     <div className="lg:w-3/5 space-y-6">
                         <h2 className="text-4xl md:text-5xl font-bold section-title text-black">About Us</h2>
-
                         <div className="text-lg text-gray-800 leading-relaxed space-y-4">
                             <p>
                                 Sutanto Group (SG8) is a holding company established since 1989
@@ -46,7 +46,7 @@ export default function AboutSection() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     );
 }

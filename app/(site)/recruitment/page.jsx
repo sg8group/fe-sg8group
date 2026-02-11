@@ -1,5 +1,5 @@
 import React from 'react'
-import Job from './sections/Job'
+import Job from './components/Job'
 import Hero from '@/components/shared/Hero'
 
 function RecruitmenPage() {

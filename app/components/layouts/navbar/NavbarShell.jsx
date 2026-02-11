@@ -33,7 +33,7 @@ export default function NavbarShell({
                 {children}
             </div>  
             <div className="hidden lg:flex items-center gap-4">
-                <a href="#" aria-label="Instagram" className="text-black/70 hover:text-blue-900">
+                <a href="#" aria-label="Instagram" className="text-black/70 hover:text-red-600">
                     <FaInstagram className="h-6 w-6 md:h-10 md:w-10" />
                 </a>
                 <a href="#" aria-label="Linkedin" className="text-black/70 hover:text-blue-900">
