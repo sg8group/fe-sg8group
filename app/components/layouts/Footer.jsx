@@ -12,6 +12,7 @@ export default function Footer() {
         <footer className="bg-white py-8">
             {/* CTA SECTION */}
             <section className="relative h-80 sm:h-96">
+                
                 <Image
                     src="/footerImg.png"
                     alt="SG8 Team"

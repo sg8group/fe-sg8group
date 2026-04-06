@@ -13,7 +13,6 @@ export default function LogoPhilosophyPage() {
       
       <PhilosophyMain />
       <PhilosophyCards />
-
       <OurClient />
     </>
   );

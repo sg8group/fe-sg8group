@@ -1,7 +1,3 @@
-import { getTopics } from "@/services/api";
-
-const topics = await getTopics();
-
 export const MENU = [
     { 
         name: "Home", 
@@ -26,11 +22,26 @@ export const MENU = [
     },
     {
         name: "Recruitment",
-        path: "/recruitment",
         children: [
             { label: "Agent of Change", path: "/recruitment/agent-of-change" },
             { label: "People Development", path: "/recruitment/people-development" },
         ],
     },
-    { name: "Article", },
+    {
+        name: "Article",
+        children: [
+            { label: "Business", path: "/article/business" },
+            { label: "Capital", path: "/article/capital" },
+            { label: "Cleaning & Hygiene", path: "/article/cleaning-hygiene" },
+            { label: "Hospitality", path: "/article/hospitality" },
+            { label: "Legal", path: "/article/legal" },
+            { label: "Organization Development", path: "/article/organization-development" },
+            { label: "Psychology", path: "/article/psychology" },
+            { label: "Sales Marketing", path: "/article/sales-marketing" },
+        ],
+    },
+    {
+        name: "SG8 Clean",
+        path: "/services/sg8-clean" 
+    },
 ];
